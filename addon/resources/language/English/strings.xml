@@ -1,0 +1,15 @@
+<strings>
+    <string id="30000">Speed sensor type</string>
+    <string id="30001">Speed sensor ID</string>
+    <string id="30002">Trainer type</string>
+    <string id="30003">Wheel circumference (mm)</string>
+
+    <string id="30100">Speed and cadence sensor</string>
+    <string id="30101">Speed sensor</string>
+
+    <string id="30110">Kurt Kinetic</string>
+    <string id="30111">BT-ATS</string>
+    <string id="30112">Tacx Blue Motion (lever - 4)</string>
+trainer_type
+
+</strings>

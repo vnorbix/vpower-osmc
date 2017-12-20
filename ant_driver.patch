@@ -1,0 +1,21 @@
+--- build/ant/core/driver.py	2017-12-20 10:40:36.886106017 +0100
++++ build/ant/core/driver_new.py	2017-12-20 10:51:29.075901649 +0100
+@@ -191,11 +191,13 @@
+             raise DriverError('Could not open device (not found)')
+ 
+         # make sure the kernel driver is not active
+-        if dev.is_kernel_driver_active(0):
+-            try:
+-                dev.detach_kernel_driver(0)
+-            except usb.core.USBError as e:
+-                sys.exit("could not detach kernel driver: {}".format(e))
++        # is_kernel_driver_active is not supported on PI (OSMC)
++        # so fail silently if detach was not sucessful,
++        # it should be detached already
++        try:
++            dev.detach_kernel_driver(0)
++        except usb.core.USBError as e:
++            pass
+ 
+         dev.set_configuration()
+         cfg = dev.get_active_configuration()

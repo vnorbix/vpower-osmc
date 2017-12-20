@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<settings>
+    <setting id="speed_sensor_type" type="select" label="30000" lvalues="30100|30101" />
+    <setting id="speed_sensor_id" type="number" label="30001" />
+    <setting id="trainer_type" type="select" label="30002" lvalues="30110|30111|30112" />
+    <setting id="wheel_circumference" type="number" label="30003" default="2122"/>
+</settings>

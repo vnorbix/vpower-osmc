@@ -1,0 +1,3 @@
+[submodule "vpower"]
+	path = vpower
+	url = git@github.com:dhague/vpower.git
